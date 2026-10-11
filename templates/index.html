@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT + Python</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f7fb;
+        margin: 0;
+        padding: 40px 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        padding: 30px;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      textarea {
+        width: 100%;
+        min-height: 120px;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+      button {
+        margin-top: 15px;
+        padding: 12px 20px;
+        background: #2563eb;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background: #1d4ed8;
+      }
+      .answer {
+        margin-top: 25px;
+        padding: 16px;
+        background: #eef6ff;
+        border-left: 5px solid #2563eb;
+        border-radius: 8px;
+        white-space: pre-wrap;
+      }
+      .error {
+        margin-top: 20px;
+        color: #b91c1c;
+        background: #fee2e2;
+        padding: 12px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ChatGPT + Python жобасы</h1>
+
+      <textarea id="questionInput" placeholder="Сұрағыңызды енгізіңіз..."></textarea>
+      <button id="sendBtn">Жауап алу</button>
+
+      <div id="answerBox" class="answer" style="display: none;"></div>
+      <div id="errorBox" class="error" style="display: none;"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
